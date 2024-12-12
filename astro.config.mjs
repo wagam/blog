@@ -14,6 +14,7 @@ import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://m-gautier.fr/blog',
   integrations: [mdx(), sitemap(), react(), icon()],
   adapter: vercel(),
   output: 'server',
