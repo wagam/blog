@@ -4,49 +4,49 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+@import '@fontsource-variable/caveat';
+@import "@fontsource-variable/inter";
+
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
+	--black: #212425;
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
+	--beige: #FEF6DD;
+	--white: #fff;
+	--green: #0E8743;
+	--indigo: #392874;
+	--burgundy: #86215F;
+	--red: #E1202D;
+	--orange: #E67216;
+	--yellow: #EDD600;
+	--cyan: #A0C5C6;
+	--rose: #BF98AC;
+	--salmon: #ED7275;
 }
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-regular.woff') format('woff');
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Atkinson';
-	src: url('/fonts/atkinson-bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
+
 body {
-	font-family: 'Atkinson', sans-serif;
+	font-family: 'Inter Variable', sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+	background: var(--beige);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
-	font-size: 20px;
+	color: var(--black);
+	font-size: 1rem;
 	line-height: 1.7;
 }
 main {
 	width: 720px;
 	max-width: calc(100% - 2em);
 	margin: auto;
-	padding: 3em 1em;
+	padding: 0 1em 60px;
 }
 h1,
 h2,
@@ -55,23 +55,22 @@ h4,
 h5,
 h6 {
 	margin: 0 0 0.5rem 0;
-	color: rgb(var(--black));
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: 2rem;
 }
 h2 {
-	font-size: 2.441em;
+	font-size: 1.5rem;
 }
 h3 {
-	font-size: 1.953em;
+	font-size: 1.25rem;
 }
 h4 {
-	font-size: 1.563em;
+	font-size: 1rem;
 }
 h5 {
-	font-size: 1.25em;
+	font-size: 0.75rem;
 }
 strong,
 b {
@@ -128,10 +127,11 @@ hr {
 }
 @media (max-width: 720px) {
 	body {
-		font-size: 18px;
+		font-size: 14px;
 	}
 	main {
-		padding: 1em;
+		padding: 1em ;
+
 	}
 }
 
@@ -152,3 +152,60 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+.cassette-cover {
+	background: var(--black);
+	color: var(--white);
+	padding: 2rem;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+	background-size: 30px 30px;
+	position: relative;
+}
+
+.cassette-cover h1 {
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+.rainbow-wrapper {
+	top: 125px;
+	left: 0;
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	transform: skew(0, 5deg);
+}
+.rainbow-wrapper .rainbow-line {
+	height: 10px;
+}
+.rainbow-yellow {
+	background: var(--yellow);
+
+}
+.rainbow-green {
+	background: var(--green);
+}
+.rainbow-blue {
+	background: var(--accent);
+}
+.rainbow-purple {
+	background: var(--indigo);
+}
+.rainbow-red {
+	background: var(--red);
+}
+.rainbow-burgundy {
+	background: var(--burgundy);
+}
+.rainbow-orange {
+	background: var(--orange);
+}
+.rainbow-cyan {
+	background: var(--cyan);
+	height: 10px;
+}
+.rainbow-rose {
+	background: var(--rose);
+}
+

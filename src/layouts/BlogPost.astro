@@ -4,6 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import PrevNextBlogPost from '../components/PrevNextBlogPost.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -21,19 +22,18 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.hero-image {
 				width: 100%;
+				padding: 2rem;
 			}
 			.hero-image img {
 				display: block;
-				margin: 0 auto;
 				border-radius: 12px;
-				box-shadow: var(--box-shadow);
+				width: calc(100% - 4rem);
 			}
 			.prose {
-				width: 720px;
 				max-width: calc(100% - 2em);
 				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
+				padding: 2em;
+				color: var(--white);
 			}
 			.title {
 				margin-bottom: 1em;
@@ -46,10 +46,42 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			.date {
 				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
 			}
 			.last-updated-on {
 				font-style: italic;
+			}
+
+			article {
+				background: var(--black);
+				color: var(--white);
+
+				position: relative;
+				width: 960px;;
+				margin: auto;
+
+			}
+
+			.rainbow {
+				height: 50px;
+				width: 100%;
+			}
+			.rainbow .rainbow-line {
+				height: 10px;
+			}
+
+			.content {
+				background: var(--white);
+				color: var(--black);
+				border-radius: 8px;
+				padding: 1rem;
+				background-image: linear-gradient(to bottom, rgba(0, 0, 0, 5%) 1px, transparent 1px);
+				background-size: 100% 27px;
+			}
+
+			@media (max-width: 720px) {
+				article {
+					width: 100%;
+				}
 			}
 		</style>
 	</head>
@@ -61,24 +93,33 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<div class="hero-image">
 					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
 				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
+				<div class="title">
+					<div class="date">
+						{pubDate && <FormattedDate date={pubDate} />}
+						{
+							updatedDate && (
+								<div class="last-updated-on">
+									Last updated on <FormattedDate date={updatedDate} />
+								</div>
+							)
+						}
 					</div>
+					<h1>{title}</h1>
+					<div class="rainbow">
+						<div class="rainbow-line rainbow-cyan"></div>
+						<div class="rainbow-line rainbow-rose"></div>
+						<div class="rainbow-line rainbow-orange"></div>
+						<div class="rainbow-line rainbow-yellow"></div>
+					</div>
+				</div>
+				<div class="prose">
+
+					<div class="content">
 					<slot />
+					</div>
 				</div>
 			</article>
+			<PrevNextBlogPost />
 		</main>
 		<Footer />
 	</body>
