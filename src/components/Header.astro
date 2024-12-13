@@ -2,9 +2,11 @@
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 import { Icon } from 'astro-icon/components'
+import Analytics from '@vercel/analytics/astro'
 ---
 
 <header>
+	<Analytics/>
 	<nav>
 
 		<h2><a href="/"> <Icon name="K7" /> {SITE_TITLE}</a></h2>
