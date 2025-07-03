@@ -26,3 +26,4 @@ accompagné de près ou de loin. Voici une liste non exhaustive de films qui m'o
 - Mon voisin Totoro, Princesse Mononoké, Kiki la petite sorcière, Nausicaä de la vallée du vent
 - Akira
 - Time out
+- Les aventures de Jack Burton dans les griffes du mandarin
