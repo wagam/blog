@@ -1,14 +1,14 @@
 ---
 title: Découverte - Podcast le RDV Tech
 pubDate: 2025/07/03
-description: Présentationdu podcast le RDV Tech
-tags: ['podcast', 'decouverte', 'tech']
+description: Présentation du podcast le RDV Tech
+tags: ['podcast', 'tech']
 author: Marco
 ---
 
 # Découverte: Podcast le RDV Tech
 
-Dans cette série d'article, je présente différents media que je consulte régulièrement. Aucun sponsoring dans ces articles, juste le plaisir de partager ce qui me passionne et m'intéresse actuellement.
+Dans cette série d'articles, je présente différents media que je consulte régulièrement. Aucun sponsoring dans ces articles, juste le plaisir de partager ce qui me passionne et m'intéresse actuellement.
 
 Si vous vous intéressez à l'univers de la tech et que vous aimez les podcasts, ou simplement si vous voulez vous tenir au courant des actualités de la tech en général, ce podcast devrait vous plaire. Animé par Patrick Béja, vous aurez le droit à un tour d'horizon hebdomadaire des nouveautés technologiques, que ce soit par exemple sur des gadgets, les nouvelles versions d'OS ou les propositions de loi qui affecteront notre rapport à la technologie.
 
