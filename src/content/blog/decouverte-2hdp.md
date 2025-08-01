@@ -14,7 +14,7 @@ Dans cette série d'articles, je présente différents media que je consulte ré
 Si vous aimez le cinéma, ou simplement écouter des copains discuter d'un film, alors ce podcast devrait vous plaire. Par contre si vous aimez ceux qui parlent sérieusement cinéma, passez votre chemin, ce n'est pas réellement l'objectif ici. Animé par une équipe de dingue, vous aurez le droit de perdre 2 heures à écouter un épisode où l'équipe raconte un film, plus souvent pour le critiquer que pour en faire son apologie. En même temps, avec un titre pareil, je m'attendais à quoi?
 Spoiler alert : Le podcast est terminé, il n'y aura à mon grand regret plus d'épisode de diffusés...
 
-### Comment ça se passe?
+### Comment ça se passe ?
 
 Le podcast se découpe comme suit :
 - Sommaire et introduction de l'équipe
@@ -42,4 +42,4 @@ Le podcast se découpe comme suit :
 
 ## En résumé
 
-Si vous souhaitez, vous aussi, perdre 2 h à cause d'un film souvent pas top, pour écouter une bande de potes le détruire, alors foncez écouter ce podcast. 
+Si vous souhaitez, vous aussi, perdre 2 h à cause d'un film souvent pas top, pour écouter une bande de potes le détruire, alors foncez écouter ce [podcast](https://podcast.ausha.co/2-heures-de-perdues. 
