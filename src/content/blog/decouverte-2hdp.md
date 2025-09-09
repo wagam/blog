@@ -42,4 +42,4 @@ Le podcast se découpe comme suit :
 
 ## En résumé
 
-Si vous souhaitez, vous aussi, perdre 2 h à cause d'un film souvent pas top, pour écouter une bande de potes le détruire, alors foncez écouter ce [podcast](https://podcast.ausha.co/2-heures-de-perdues. 
+Si vous souhaitez, vous aussi, perdre 2 h à cause d'un film souvent pas top, pour écouter une bande de potes le détruire, alors foncez écouter ce [podcast](https://podcast.ausha.co/2-heures-de-perdues). 
