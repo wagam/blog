@@ -295,7 +295,7 @@ const posts = (await getCollection('blog')).sort(
 						posts.map((post, index) => (
 							(index === 0 ) ? (
 							<li class="top-post">
-								<a href={`/blog/${post.slug}/`}>
+								<a href={`/blog/${post.id}/`}>
 									<div></div>
 									<div class="cassette-rainbow">
 										<div class="rainbow-line rainbow-yellow"></div>
@@ -314,7 +314,7 @@ const posts = (await getCollection('blog')).sort(
 							</li>)
 						: (
 						<li class="other-post">
-							<a href={`/blog/${post.slug}/`}>
+							<a href={`/blog/${post.id}/`}>
 								<div class="sticker"><div class="cassette-rainbow">
 									<div class="rainbow-line rainbow-green"></div>
 									<div class="rainbow-line rainbow-blue"></div>
